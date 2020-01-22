@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+void swap(int *a, int *b); 
+ 
+int main()
+{
+    int m,n;
+    
+    printf("values before swap m=");
+    scanf("%d",&m);
+    printf("values before swap n=");
+    scanf("%d",&n);
+    swap(&m, &n);         
+}
+ 
+void swap(int *a, int *b)
+{
+    int tmp;
+    tmp = *a;
+    *a = *b;
+    *b = tmp;
+    printf("values after swap m = %d \n",*a);
+    printf("values after swap n= %d \n",*b);
+}
